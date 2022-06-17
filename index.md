@@ -1,5 +1,4 @@
 ﻿# Custom Arduino Project
-This will serve as a brief description of your project. Limit this to three sentences because it can become overly long at that point. This copy should draw the user in and make she/him want to read more.
 This project uses an Arduino, ultrasonic distance sensor, and a servo arm and motor. Depending on how far an object is to the ultrasonic distance sensor, the servo arm will move to a specific position. As the object goes farther, the arm moves counter-clockwise, and as the object moves closer, the arm moves clockwise.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
