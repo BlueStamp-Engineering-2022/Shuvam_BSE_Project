@@ -32,4 +32,4 @@ Here is the mapping of the Arduino I created using TinkerCad:
 
 Here is the video of the project:
 
-[![First Milestone](https://user-images.githubusercontent.com/97251821/174344115-d90e9629-3f0e-48ef-b017-95d0a9b17dc4.png)](https://www.youtube.com/watch?v=fmgGCqnGbXc "First Milestone"){:target="_blank" rel="noopener"}
+[![First Milestone](https://user-images.githubusercontent.com/97251821/174344115-d90e9629-3f0e-48ef-b017-95d0a9b17dc4.png)](https://www.youtube.com/watch?v=fmgGCqnGbXc "First Milestone")
