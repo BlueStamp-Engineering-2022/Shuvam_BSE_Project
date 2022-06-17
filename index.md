@@ -29,3 +29,6 @@ First, I learned how the ultrasonic distance sensor and servo worked. The ultras
 
 Here is the mapping of the Arduino I created using TinkerCad:
 ![Start Simulating](https://user-images.githubusercontent.com/97251821/174340128-64b7c9a0-240e-44ee-bf98-838628f14f96.png)
+
+Here is the video of the project:
+[!Starter Project](https://www.youtube.com/watch?v=fmgGCqnGbXc){:target="_blank" rel="noopener"}
