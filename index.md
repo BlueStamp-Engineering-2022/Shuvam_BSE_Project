@@ -31,4 +31,5 @@ Here is the mapping of the Arduino I created using TinkerCad:
 ![Start Simulating](https://user-images.githubusercontent.com/97251821/174340128-64b7c9a0-240e-44ee-bf98-838628f14f96.png)
 
 Here is the video of the project:
-[![First Milestone](https://drive.google.com/file/d/1UbxVsmLPtWV0UaeddzvTn8VUPXsHD1qQ/view?usp=sharing)](https://www.youtube.com/watch?v=fmgGCqnGbXc "First Milestone"){:target="_blank" rel="noopener"}
+
+[![First Milestone](https://user-images.githubusercontent.com/97251821/174344115-d90e9629-3f0e-48ef-b017-95d0a9b17dc4.png)](https://www.youtube.com/watch?v=fmgGCqnGbXc "First Milestone"){:target="_blank" rel="noopener"}
