@@ -22,7 +22,6 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 
 My first milestone was setting up the Raspberry Pi and installing the camera (Picamera2). A preview of what the camera was capturing was shown, and once a widget was clicked, the camera would take a picture and save it to the desktop. In the code, the PyQT5 library was installed in order to enhance the user interface and add widgets. Then the Picamera2 library was imported, allowing me to code the camera. The post_callback() function uses a request.get.metadata().items() function in order to display the metadata of the image next to the preview. The camera is then configured to preview an image of 800 by 600 pixels. Then, when the widget saying "Click to capture JPEG" is clicked, the on_button_clicked() function is triggered. If there is not a previous image already in the process of being synced, the image is captured. Then the contents of the preview window are coded, and the prgram is told to start functioning.
 
-[![First Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612574117/video_to_markdown/images/youtube--CaCazFBhYKs-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=CaCazFBhYKs "First Milestone"){:target="_blank" rel="noopener"}
 
 # Starter Project: Custom Arduino Project
 
