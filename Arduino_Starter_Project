@@ -1,0 +1,45 @@
+#define echoPin 2
+#define trigPin 3
+
+// defines variables
+long duration;
+int distance;
+int pos;
+int previous_pos;
+
+#include <Servo.h>
+
+Servo myservo;
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+  Serial.println("Ultrasonic Sensor HC-SR04 Test"); 
+  Serial.println("with Arduino UNO R3");
+  myservo.attach(9);
+  pos = 0;
+  previous_pos=0;
+
+}
+
+
+void loop() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration * 0.034 / 2;
+  
+  if (distance>=2 and distance<=60) {
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm.");
+    pos=distance*3;
+    myservo.write(pos);
+    delay(1);
+  
+      }
+}
