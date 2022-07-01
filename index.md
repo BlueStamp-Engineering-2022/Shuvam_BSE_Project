@@ -1,5 +1,6 @@
-﻿# BlueStamp Project
-This project uses an Arduino, ultrasonic distance sensor, and a servo arm and motor. Depending on how far an object is to the ultrasonic distance sensor, the servo arm will move to a specific position. As the object goes farther, the arm moves counter-clockwise, and as the object moves closer, the arm moves clockwise.
+﻿# Detecting Unattentive Car Drivers
+ 
+This project uses a Raspberry Pi machine learning program to detect whether the driver of a car is attentive or not. If the driver is looking down, has their eyes closed, or is just not paying attention, the speaker will try to alert the driving.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
