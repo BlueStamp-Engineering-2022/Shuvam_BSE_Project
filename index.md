@@ -1,6 +1,6 @@
 ﻿# Detecting Unattentive Car Drivers
  
-This project uses a Raspberry Pi machine learning program to detect whether the driver of a car is attentive or not. If the driver is looking down, has their eyes closed, or is just not paying attention, the speaker will try to alert the driving.
+This project uses a Raspberry Pi machine learning program to detect whether the driver of a car is attentive or not. If the driver is looking down or has their eyes closed, the speaker will try to alert the driver.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
