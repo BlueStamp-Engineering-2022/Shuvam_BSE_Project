@@ -30,8 +30,8 @@ My first milestone was setting up the Raspberry Pi and installing the camera (Pi
 First, I learned how the ultrasonic distance sensor and servo worked. The ultrasonic sensor first sends out a signal that humans can not feel or hear. If an object is in range, the signal bounces off of the object and is read by the sensor again.  The Servo arm has a rotation of 180 degrees, and it is able to move to the desired degree. I then installed the Arduino, and mapped out the circuit I was trying to build. After connecting the sensors and motors to the Arduino, I programmed the circuit. I made the ultrasonic sensor detect the distance of the object in front of it by multiplying the duration (time it takes for the sensor between sending and recieving the signal) by 0.0343 (the speed of sound - 343 meters per second - is converted to 0.0343 centimeters per microsecond because the sensor is calculating in centimeters and microseconds) and then dividing that by 2. Then, if the distance is between 2 and 60 cm, the servo would move to the according degrees.
 
 Here is the mapping of the Arduino I created using TinkerCad:
-![Start Simulating](https://user-images.githubusercontent.com/97251821/174340128-64b7c9a0-240e-44ee-bf98-838628f14f96.png)
+![Arduino Model - TinkerCad](https://user-images.githubusercontent.com/97251821/174340128-64b7c9a0-240e-44ee-bf98-838628f14f96.png)
 
-Here is the video of the project"
+Here is the video of the project:
 
 [![Shuvam Sinha Starter Project](https://res.cloudinary.com/marcomontalbano/image/upload/v1655740323/video_to_markdown/images/youtube--fmgGCqnGbXc-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=fmgGCqnGbXc "Shuvam Sinha Starter Project")
