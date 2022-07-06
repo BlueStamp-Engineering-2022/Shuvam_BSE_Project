@@ -9,10 +9,9 @@ This project uses a Raspberry Pi machine learning program to detect whether the 
 ![Headstone Image](https://lh3.googleusercontent.com/pw/AM-JKLXQZU8QvJV9rAtq2BbXbuaYxf8qZCV4ncQU251ZyZJFHK20Bq_x2f0YFLaRgdEAiVJ9I6s7ESH9mFThj_BKtDviE-diiHyiSX73TIQUTpSs4AENXl9nicOyVBilNvOptstkM9RLaF_ECU4J06S_LEF7=w726-h725-no?authuser=0)
 
 
-# Final Milestone
-My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint. 
+# Third Milestone
 
-[![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone"){:target="_blank" rel="noopener"}
+My third milestone was to get the Raspberry Pi to successfully recognize whether a person's eyes were open. Separate programs based on the same code recognized a human face and whether a person was smiling. In the code, the time , OpenCV, and Raspberry Pi camera libraries were imported. Then, the Cascade Classifier is used to detect whether the images are similar to the training data. Then the draw_eyes() function draws a rectangle around the detected eyes. Next, the camera is configured, and the preview window shows what the camera is streaming. Then the program is run for 300 seconds using a while loop.
 
 # Second Milestone
 
