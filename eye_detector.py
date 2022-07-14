@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
+import pygame
+
 from picamera2 import Picamera2, Preview, MappedArray
 
 
@@ -54,8 +56,15 @@ picam2.post_callback = draw_eyes
 picam2.start()
 flag = True
 
+
+sound_file = ("/home/ssinha/Bluestamp_Project/Alarm_sound_effect.mp3")
+
+pygame.mixer.init()
+speaker_volume = 1
+pygame.mixer.music.set_volume(speaker_volume)
+
 start_time = time.monotonic()
-while time.monotonic() - start_time < 15:
+while time.monotonic() - start_time < 25:
     buffer = picam2.capture_buffer("lores")
     grey = buffer[:s1 * h1].reshape((h1, s1))
     eyes = eye_detector.detectMultiScale(grey, 1.12, 15)
@@ -66,6 +75,8 @@ while time.monotonic() - start_time < 15:
         if diff > 5:
             print ("Not attentive for,", int(diff), "seconds")
             flag = False
+            pygame.mixer.music.load(sound_file)
+            pygame.mixer.music.play()
     elif int(current_time) % 5 != 0:
         flag = True
         
