@@ -57,7 +57,7 @@ picam2.start()
 flag = True
 
 
-sound_file = ("/home/ssinha/Bluestamp_Project/Alarm_sound_effect.mp3")
+sound_file = ("/home/ssinha/Bluestamp_Project/Car_Honk_Sound_Effect.mp3")
 
 pygame.mixer.init()
 speaker_volume = 1
