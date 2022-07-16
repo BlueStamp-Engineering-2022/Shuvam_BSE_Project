@@ -4,7 +4,7 @@ This project uses a Raspberry Pi machine learning program to detect whether the 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Shuvam | Moreau Catholic High School | Computer Science | Incoming Junior
+| Shuvam Sinha | Moreau Catholic High School | Computer Science | Incoming Junior
 
 ![Headstone Image](https://lh3.googleusercontent.com/pw/AM-JKLXQZU8QvJV9rAtq2BbXbuaYxf8qZCV4ncQU251ZyZJFHK20Bq_x2f0YFLaRgdEAiVJ9I6s7ESH9mFThj_BKtDviE-diiHyiSX73TIQUTpSs4AENXl9nicOyVBilNvOptstkM9RLaF_ECU4J06S_LEF7=w726-h725-no?authuser=0)
 
