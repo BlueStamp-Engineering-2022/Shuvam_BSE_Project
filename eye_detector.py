@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 import time
 
-import time
-
 import cv2
 
 import matplotlib.pyplot as plt
@@ -22,6 +20,8 @@ detect_time = original_detect_time
 detection = [0]
 timestamp = [0]
 
+times_not_detected = 0
+
 def draw_eyes(request):
     global detect_time
     global detection
@@ -30,6 +30,7 @@ def draw_eyes(request):
             detection.append(1)
             timestamp.append(int(time.time() - original_detect_time))
         detect_time = time.time()
+
     else:
         if detection[-1] != 0:
             detection.append(0)
@@ -64,7 +65,7 @@ speaker_volume = 1
 pygame.mixer.music.set_volume(speaker_volume)
 
 start_time = time.monotonic()
-while time.monotonic() - start_time < 25:
+while time.monotonic() - start_time < 60:
     buffer = picam2.capture_buffer("lores")
     grey = buffer[:s1 * h1].reshape((h1, s1))
     eyes = eye_detector.detectMultiScale(grey, 1.12, 15)
@@ -75,15 +76,26 @@ while time.monotonic() - start_time < 25:
         if diff > 5:
             print ("Not attentive for,", int(diff), "seconds")
             flag = False
-            pygame.mixer.music.load(sound_file)
-            pygame.mixer.music.play()
+            if times_not_detected == 0:
+                pygame.mixer.music.load("/home/ssinha/Bluestamp_Project/Alarm_sound_effect.mp3")
+                pygame.mixer.music.play()
+
+            elif times_not_detected == 1:
+                pygame.mixer.music.load("/home/ssinha/Bluestamp_Project/Car_Honk_Sound_Effect.mp3")
+                pygame.mixer.music.play()
+            elif times_not_detected >= 2:
+                pygame.mixer.music.load("/home/ssinha/Bluestamp_Project/PolicesirenSoundEffect.mp3")
+                pygame.mixer.music.play()
+
+                
+            times_not_detected+=1
     elif int(current_time) % 5 != 0:
         flag = True
         
 y = detection
 x = timestamp
-print (y)
-print (x)
+print ("Detection: ", y)
+print ("Timestamp: ", x)
 plt.bar(x, y)
 plt.xlabel("Time")
 plt.ylabel("Detection")
