@@ -25,8 +25,10 @@ times_not_detected = 0
 def draw_eyes(request):
     global detect_time
     global detection
+    global times_not_detected
     if len(eyes) > 0:
         if detection[-1] != 1:
+            times_not_detected = 0
             detection.append(1)
             timestamp.append(int(time.time() - original_detect_time))
         detect_time = time.time()
@@ -79,7 +81,6 @@ while time.monotonic() - start_time < 60:
             if times_not_detected == 0:
                 pygame.mixer.music.load("/home/ssinha/Bluestamp_Project/Alarm_sound_effect.mp3")
                 pygame.mixer.music.play()
-
             elif times_not_detected == 1:
                 pygame.mixer.music.load("/home/ssinha/Bluestamp_Project/Car_Honk_Sound_Effect.mp3")
                 pygame.mixer.music.play()
