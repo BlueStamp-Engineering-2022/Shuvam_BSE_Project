@@ -26,17 +26,19 @@ def draw_eyes(request):
     global detect_time
     global detection
     global times_not_detected
+    
+    this_second = int(time.time() - original_detect_time)
     if len(eyes) > 0:
-        if detection[-1] != 1:
+        if timestamp[-1] != this_second:
             times_not_detected = 0
             detection.append(1)
-            timestamp.append(int(time.time() - original_detect_time))
+            timestamp.append(this_second)
         detect_time = time.time()
 
     else:
-        if detection[-1] != 0:
+        if timestamp[-1] != this_second:
             detection.append(0)
-            timestamp.append(int(time.time() - original_detect_time))
+            timestamp.append(this_second)
             
     with MappedArray(request, "main") as m:
         for e in eyes:
@@ -67,7 +69,7 @@ speaker_volume = 1
 pygame.mixer.music.set_volume(speaker_volume)
 
 start_time = time.monotonic()
-while time.monotonic() - start_time < 60:
+while time.monotonic() - start_time < 45:
     buffer = picam2.capture_buffer("lores")
     grey = buffer[:s1 * h1].reshape((h1, s1))
     eyes = eye_detector.detectMultiScale(grey, 1.12, 15)
