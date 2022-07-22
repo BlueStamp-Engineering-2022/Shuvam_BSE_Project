@@ -2,7 +2,9 @@
  
 This project uses a Raspberry Pi machine learning program to detect whether the driver of a car is attentive or not. If the driver is looking down or has their eyes closed, the speaker will try to alert the driver. A bar graph that shows when the driver is alert or not is displayed.
 
-Testing
+Image of project:
+
+
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
