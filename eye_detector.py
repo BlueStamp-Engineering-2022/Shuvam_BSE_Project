@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 import time
-
 import cv2
-
 import matplotlib.pyplot as plt
-
 import numpy as np
-
 import pygame
 
 from picamera2 import Picamera2, Preview, MappedArray
